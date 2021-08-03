@@ -39,12 +39,120 @@
             <div class="header-right">
                 <div class="header-search">
                     <img src="./images/search.svg" alt="">
+                    <!-- hover -->
+                    <div class="header-search__hover">Tìm kiếm</div>
+                    <!-- hover -->
                 </div>
                 <div class="header-notifi">
                     <img src="./images/notification.svg" alt="">
-                    <div class="header-notifi-bgc">
+                    <div class="header-notifi-badge">
                         <span>12</span>
                     </div>
+                    <!-- hover -->
+                    <div class="header-notifi__hover">Thông báo</div>
+                    <!-- hover -->
+                    <!-- show notifi -->
+                    <div class="show-notifi">
+                        <div class="show-notifi-header">
+                            <h2 class="show-notifi-title">Thông báo</h2>
+                            <span class="show-notifi-more">...</span>
+                        </div>
+                        <ul class="show-notifi-list">
+                            <li class="show-notifi__items">
+                                <a href="#" class="show-notifi__link">
+                                    <div class="show-notifi__avatar">
+                                        <img src="./images/imho.jpg" alt="">
+                                    </div>
+                                    <div class="show-notifi__content">
+                                        <span class="show-notifi__account">
+                                                Dự báo thời tiết VTV
+                                        </span>
+                                        <span class="show-notifi__action">đã phát trực tiếp:</span>
+                                        <span class="show-notifi__text">"Bắc Bộ Lại nắng Nóng Trở Lại Rồi Mọi Người Ơi..................."</span>
+                                        <div class="show-notifi__time">14 giờ trước</div>
+                                    </div>
+                                </a>
+                                <span class="show-notifi__unread"></span>
+                            </li>
+                            <li class="show-notifi__items">
+                                <a href="#" class="show-notifi__link">
+                                    <div class="show-notifi__avatar">
+                                        <img src="./images/imho.jpg" alt="">
+                                    </div>
+                                    <div class="show-notifi__content">
+                                        <span class="show-notifi__account">
+                                                Nguyễn Văn A
+                                        </span>
+                                        <span class="show-notifi__action">bình luận bài viết vủa bạn</span>
+                                        <div class="show-notifi__time">14 giờ trước</div>
+                                    </div>
+                                </a>
+                                <span class="show-notifi__unread"></span>
+                            </li>
+                            <li class="show-notifi__items">
+                                <a href="#" class="show-notifi__link">
+                                    <div class="show-notifi__avatar">
+                                        <img src="./images/imho.jpg" alt="">
+                                    </div>
+                                    <div class="show-notifi__content">
+                                        <span class="show-notifi__account">
+                                                Nguyễn Văn A
+                                        </span>
+                                        <span class="show-notifi__action">đã trả lời bình luận của bạn</span>
+                                        <div class="show-notifi__time">14 giờ trước</div>
+                                    </div>
+                                </a>
+                                <span class="show-notifi__unread"></span>
+                            </li>
+                            <li class="show-notifi__items">
+                                <a href="#" class="show-notifi__link">
+                                    <div class="show-notifi__avatar">
+                                        <img src="./images/imho.jpg" alt="">
+                                    </div>
+                                    <div class="show-notifi__content">
+                                        <span class="show-notifi__account">
+                                                Nguyễn Văn A
+                                        </span>
+                                        <span class="show-notifi__action">thích bài viết của bạn</span>
+                                        <div class="show-notifi__time">14 giờ trước</div>
+                                    </div>
+                                </a>
+                                <span class="show-notifi__unread"></span>
+                            </li>
+                            <li class="show-notifi__items">
+                                <a href="#" class="show-notifi__link">
+                                    <div class="show-notifi__avatar">
+                                        <img src="./images/imho.jpg" alt="">
+                                    </div>
+                                    <div class="show-notifi__content">
+                                        <span class="show-notifi__account">
+                                                Nguyễn Văn A
+                                        </span>
+                                        <span class="show-notifi__action">thích bình luận của bạn</span>
+                                        <div class="show-notifi__time">14 giờ trước</div>
+                                    </div>
+                                </a>
+                                <span class="show-notifi__unread"></span>
+                            </li>
+                            <li class="show-notifi__items">
+                                <a href="#" class="show-notifi__link">
+                                    <div class="show-notifi__avatar">
+                                        <img src="./images/imho.jpg" alt="">
+                                    </div>
+                                    <div class="show-notifi__content">
+                                        <span class="show-notifi__account">
+                                                Nguyễn Văn A
+                                        </span>
+                                        <span class="show-notifi__action">đã đăng bài viết trong</span>
+                                        <span class="show-notifi__group">Hội Nhóm Linh Tinh</span>
+                                        <div class="show-notifi__time">14 giờ trước</div>
+                                    </div>
+                                </a>
+                                <span class="show-notifi__unread"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end show notifi -->
                 </div>
                 <div class="header-info">
                     <a href="#" class="header-info-content">
@@ -75,10 +183,31 @@
         </div>
     </div>
     <!-- end show search -->
-    <!-- show notification -->
-    <!-- <div class="show-notification">
-    </div> -->
-    <!-- end show notification -->
+    <!-- tao bai dang -->
+    <div class="create-post-wrapper">
+        <div class="create-post">
+            <form action="">
+                <div class="create-post__header">
+                    <h3 class="create-post__title">Tạo bài viết</h3>
+                    <span class="create-post__close">
+                        <img src="./images/close.svg" alt="">
+                    </span>
+                </div>
+                <div class="create-post-info">
+
+                </div>
+                <div class="create-post__content">
+                    text
+                </div>
+                <div class="create-post-add">
+                    <div class="create-post-add__text">Thêm vào bài viết</div>
+                    <div class="create-post-add__cate"></div>
+                </div>
+                <buton class="create-button btn btn-blue">Đăng</buton>
+            </form>
+        </div>
+    </div>
+    <!-- end tao bai dang -->
     <main id="main">
         <div class="main w-1080">
             <div class="main-left">
@@ -120,7 +249,15 @@
                                 </div>
                                 <div class="__box-info__coin">136.000.000</div>
                             </div>
-                            <div class="main-left-content-wrapper__box-more">...</div>
+                            <div class="main-left-content-wrapper__box-more">
+                                <span class="seemore-ellipsic">
+                                    <img src="./images/Ellipsis.svg" alt="">
+                                </span>
+                                <ul class="seemore-list-index">
+                                    <li class="seemore-items-index"><a href="#">Lưu bài viết</a></li>
+                                    <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
