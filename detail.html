@@ -161,15 +161,6 @@
                         </span>
                         <h1 class="header-info__fullname">Nguyễn Văn A</h1>
                     </a>
-                    <!-- show info -->
-                    <ul class="show-info">
-                        <li class="show-info__items"><a href="#">Thông tin cá nhân</a></li>
-                        <li class="show-info__items create-group">Tạo cộng đồng</li>
-                        <li class="show-info__items"><a href="#">Ví của tôi</a></li>
-                        <li class="show-info__items"><a href="#">Cửa hàng quà tặng</a></li>
-                        <li class="show-info__items">Đăng xuất</li>
-                    </ul>
-                    <!-- end show info -->
                 </div>
             </div>
         </div>
@@ -192,28 +183,31 @@
         </div>
     </div>
     <!-- end show search -->
-    <!-- tao cong dong -->
-    <div class="create-group-wrapper">
-        <div class="create-group-form">
-            <div class="create-group-content">
-                <form action="">
-                    <div class="form-group1">
-                        <label for="create-group-input" class="create-group-label">Tạo cộng đồng</label>
-                        <input type="text" id="create-group-input" name="" class="create-group-input">
-                    </div>
-                    <div class="form-group1">
-                        <label for="create-group-textarea" class="create-group-label">Mô tả</label>
-                        <textarea name="" id="create-group-textarea" cols="50" rows="7" class="create-group-textarea"></textarea>
-                    </div>
-                    <div class="create-group-content__button">
-                        <span class="create-group__close button-cancel btn">Hủy</span>
-                        <button type="submit" class="button-create btn btn-blue">Tạo cộng đồng</button>
-                    </div>
-                </form>
-            </div>
+    <!-- tao bai dang -->
+    <div class="create-post-wrapper">
+        <div class="create-post">
+            <form action="">
+                <div class="create-post__header">
+                    <h3 class="create-post__title">Tạo bài viết</h3>
+                    <span class="create-post__close">
+                        <img src="./images/close.svg" alt="">
+                    </span>
+                </div>
+                <div class="create-post-info">
+
+                </div>
+                <div class="create-post__content">
+                    text
+                </div>
+                <div class="create-post-add">
+                    <div class="create-post-add__text">Thêm vào bài viết</div>
+                    <div class="create-post-add__cate"></div>
+                </div>
+                <buton class="create-button btn btn-blue">Đăng</buton>
+            </form>
         </div>
     </div>
-    <!-- end cong dong -->
+    <!-- end tao bai dang -->
     <main id="main">
         <div class="main w-1080">
             <div class="main-left">
@@ -272,7 +266,7 @@
                         <p class="main-left-content__des">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án. <a href="#" class="main-left-content__link">Xem thêm</a></p>
                         <div class="main-left-content-common">
                             <div class="content-common-left">
-                                <div class="content-common__cmt"><a href="#">368 bình luận</a></div>
+                                <div class="content-common__cmt">368 bình luận</div>
                                 <div class="content-common__share">Chia sẻ</div>
                                 <div class="content-common__bonus">Trao thưởng</div>
                             </div>
@@ -282,169 +276,110 @@
                                 <div class="content-common__up"><img src="./images/arrow_up.svg" alt=""></div>
                             </div>
                         </div>
-                    </div>
-                    <!-- end khoi 1 -->
-                    <!-- khoi 1 -->
-                    <div class="main-left-content-wrapper" id="block1">
-                        <div class="main-left-content-wrapper__box">
-                            <div class="main-left-content-wrapper__box-info">
-                                <a href="#" class="__box-info__avatar-user">
-                                    <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
-                                    <div class="__box-info__text">Nguyễn Văn A</div>
-                                </a>
-                                <div class="__box-info__time">3 giờ trước nhóm <span><a href="#" class="__box-info__time__link">OTOFUN</a></span>
+                        <!-- show comment -->
+                        <div class="show-cmt">
+                            <div class="cmt-field">
+                                <div class="cmt-avatar">
+                                    <img src="./images/imho.jpg" alt="">
                                 </div>
-                                <div class="__box-info__coin">136.000.000</div>
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" name="cmt" class="form-control" placeholder="Viết bình luận...">
+                                    </div>
+                                </form>
                             </div>
-                            <div class="main-left-content-wrapper__box-more">
-                                <span class="seemore-ellipsic">
-                                    <img src="./images/Ellipsis.svg" alt="">
-                                </span>
-                                <ul class="seemore-list-index">
-                                    <li class="seemore-items-index"><a href="#">Lưu bài viết</a></li>
-                                    <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <h3 class="main-left-content__title">
-                            <a href="#">Tuyến đường sắt qua Hồ Gươm vay ODA 30.572 tỷ đồng?</a>
-                        </h3>
-                        <p class="main-left-content__des">
-                            <div class="">
-                                <div class="thumb-img">
-                                    <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/food.jpg" width="740" height="444" alt=""></a>
-                                </div>
-                            </div>
-                        </p>
-                        <div class="main-left-content-common">
-                            <div class="content-common-left">
-                                <div class="content-common__cmt"><a href="#">368 bình luận</a></div>
-                                <div class="content-common__share">Chia sẻ</div>
-                                <div class="content-common__bonus">Trao thưởng</div>
-                            </div>
-                            <div class="content-common-right">
-                                <div class="content-common__down"><img src="./images/arrow_down.svg" alt=""></div>
-                                <div class="content-common__number">168</div>
-                                <div class="content-common__up"><img src="./images/arrow_up.svg" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end khoi 1 -->
-                    <!-- khoi 1 -->
-                    <div class="main-left-content-wrapper" id="block1">
-                        <div class="main-left-content-wrapper__box">
-                            <div class="main-left-content-wrapper__box-info">
-                                <a href="#" class="__box-info__avatar-user">
-                                    <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
-                                    <div class="__box-info__text">Nguyễn Văn A</div>
-                                </a>
-                                <div class="__box-info__time">3 giờ trước nhóm <span><a href="#" class="__box-info__time__link">OTOFUN</a></span>
-                                </div>
-                                <div class="__box-info__coin">136.000.000</div>
-                            </div>
-                            <div class="main-left-content-wrapper__box-more">
-                                <span class="seemore-ellipsic">
-                                    <img src="./images/Ellipsis.svg" alt="">
-                                </span>
-                                <ul class="seemore-list-index">
-                                    <li class="seemore-items-index"><a href="#">Lưu bài viết</a></li>
-                                    <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <h3 class="main-left-content__title">
-                            <a href="#">Tuyến đường sắt qua Hồ Gươm vay ODA 30.572 tỷ đồng?</a>
-                        </h3>
-                        <p class="main-left-content__des">
-                            <div class="main-left-content__img">
-                                <div class="">
-                                    <div class="thumb-img">
-                                        <a href="#" class="thumb-item thumb-5x3">
-                                            <img class="" src="./images/food.jpg" width="740" height="444" alt="">
+                            <div class="cmt-block">
+                                <div class="main-left-content-wrapper__box">
+                                    <div class="main-left-content-wrapper__box-info">
+                                        <a href="#" class="__box-info__avatar-user">
+                                            <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
+                                            <div class="__box-info__text">Nguyễn Văn A</div>
                                         </a>
+                                        <div class="__box-info__time">3 giờ trước
+                                        </div>
+                                        <div class="__box-info__coin">136.000.000</div>
+                                    </div>
+                                    <div class="main-left-content-wrapper__box-more">
+                                        <span class="seemore-ellipsic">
+                                            <img src="./images/Ellipsis.svg" alt="">
+                                        </span>
+                                        <ul class="seemore-list-index">
+                                            <li class="seemore-items-index"><a href="#">Xóa bài viết</a></li>
+                                            <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <div class="thumb-img">
-                                        <a href="#" class="thumb-item thumb-5x3">
-                                            <img class="" src="./images/food.jpg" width="740" height="444" alt="">
-                                        </a>
+                                <p class="main-left-content__des pt-10">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án.</p>
+                                <div class="main-left-content-common">
+                                    <div class="content-common-left">
+                                        <div class="content-common__cmt">1 Trả lời</div>
+
+                                        <div class="content-common__bonus">Trao thưởng</div>
+                                    </div>
+                                    <div class="content-common-right">
+                                        <div class="content-common__down"><img src="./images/arrow_down.svg" alt=""></div>
+                                        <div class="content-common__number">168</div>
+                                        <div class="content-common__up"><img src="./images/arrow_up.svg" alt=""></div>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <div class="thumb-img">
-                                        <a href="#" class="thumb-item thumb-5x3">
-                                            <img class="" src="./images/food.jpg" width="740" height="444" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div class="thumb-img">
-                                        <a href="#" class="thumb-item thumb-5x3">
-                                            <img class="" src="./images/food.jpg" width="740" height="444" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </p>
-                        <div class="main-left-content-common">
-                            <div class="content-common-left">
-                                <div class="content-common__cmt"><a href="#">368 bình luận</a></div>
-                                <div class="content-common__share">Chia sẻ</div>
-                                <div class="content-common__bonus">Trao thưởng</div>
-                            </div>
-                            <div class="content-common-right">
-                                <div class="content-common__down"><img src="./images/arrow_down.svg" alt=""></div>
-                                <div class="content-common__number">168</div>
-                                <div class="content-common__up"><img src="./images/arrow_up.svg" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end khoi 1 -->
-                    <!-- khoi 1 -->
-                    <div class="main-left-content-wrapper" id="block1">
-                        <div class="main-left-content-wrapper__box">
-                            <div class="main-left-content-wrapper__box-info">
-                                <a href="#" class="__box-info__avatar-user">
-                                    <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
-                                    <div class="__box-info__text">Nguyễn Văn A</div>
-                                </a>
-                                <div class="__box-info__time">3 giờ trước nhóm <span><a href="#" class="__box-info__time__link">OTOFUN</a></span>
-                                </div>
-                                <div class="__box-info__coin">136.000.000</div>
-                            </div>
-                            <div class="main-left-content-wrapper__box-more">
-                                <span class="seemore-ellipsic">
-                                    <img src="./images/Ellipsis.svg" alt="">
-                                </span>
-                                <ul class="seemore-list-index">
-                                    <li class="seemore-items-index"><a href="#">Lưu bài viết</a></li>
-                                    <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <h3 class="main-left-content__title">
-                            <a href="#">Tuyến đường sắt qua Hồ Gươm vay ODA 30.572 tỷ đồng?</a>
-                        </h3>
-                        <p class="main-left-content__des">
-                            <div class="main-left-content__block">
-                                <div class="main-left-content__thumb">
-                                    <div class="">
-                                        <div class="thumb-img">
-                                            <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/food.jpg" width="740" height="444" alt=""></a>
+                                <!-- rep cmt -->
+                                <div class="rep-cmt">
+                                    <div class="main-left-content-wrapper__box">
+                                        <div class="main-left-content-wrapper__box-info">
+                                            <a href="#" class="__box-info__avatar-user">
+                                                <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
+                                                <div class="__box-info__text">Nguyễn Văn A</div>
+                                            </a>
+                                            <div class="__box-info__time">3 giờ trước
+                                            </div>
+                                        </div>
+                                        <div class="main-left-content-wrapper__box-more">
+                                            <span class="seemore-ellipsic">
+                                                <img src="./images/Ellipsis.svg" alt="">
+                                            </span>
+                                            <ul class="seemore-list-index">
+                                                <li class="seemore-items-index"><a href="#">Xóa bài viết</a></li>
+                                                <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
+                                            </ul>
                                         </div>
                                     </div>
+                                    <p class="main-left-content__des pt-10">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án.</p>
                                 </div>
-                                <div class="main-left-content__common">
-                                    <div class="main-left-content__sapo"><a href="#">Dọn dẹp và phủ xanh ban công 4 m2 khi giãn cách</a></div>
-                                    <p class="main-left-content__text">Sau một thời gian loay hoay, tôi đã tự biết cách nấu nướng ở nhà trong thời gian giãn cách xã hội.</p>
-                                    <a href="#" class="main-left-content__link2">zing.vn</a>
-                                </div>
+                                <!-- end rep cmt -->
                             </div>
-                        </p>
+                        </div>
+                        <!-- end show comment -->
+                    </div>
+                    <!-- end khoi 1 -->
+                    <!-- khoi 1 -->
+                    <div class="main-left-content-wrapper" id="block1">
+                        <div class="main-left-content-wrapper__box">
+                            <div class="main-left-content-wrapper__box-info">
+                                <a href="#" class="__box-info__avatar-user">
+                                    <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
+                                    <div class="__box-info__text">Nguyễn Văn A</div>
+                                </a>
+                                <div class="__box-info__time">3 giờ trước nhóm <span><a href="#" class="__box-info__time__link">OTOFUN</a></span>
+                                </div>
+                                <div class="__box-info__coin">136.000.000</div>
+                            </div>
+                            <div class="main-left-content-wrapper__box-more">
+                                <span class="seemore-ellipsic">
+                                    <img src="./images/Ellipsis.svg" alt="">
+                                </span>
+                                <ul class="seemore-list-index">
+                                    <li class="seemore-items-index"><a href="#">Lưu bài viết</a></li>
+                                    <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="main-left-content__title">
+                            <a href="#">Tuyến đường sắt qua Hồ Gươm vay ODA 30.572 tỷ đồng?</a>
+                        </h3>
+                        <p class="main-left-content__des">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án. <a href="#" class="main-left-content__link">Xem thêm</a></p>
                         <div class="main-left-content-common">
                             <div class="content-common-left">
-                                <div class="content-common__cmt"><a href="#">368 bình luận</a></div>
+                                <div class="content-common__cmt">368 bình luận</div>
                                 <div class="content-common__share">Chia sẻ</div>
                                 <div class="content-common__bonus">Trao thưởng</div>
                             </div>
@@ -454,70 +389,87 @@
                                 <div class="content-common__up"><img src="./images/arrow_up.svg" alt=""></div>
                             </div>
                         </div>
+                        <!-- show comment -->
+                        <div class="show-cmt">
+                            <div class="cmt-field">
+                                <div class="cmt-avatar">
+                                    <img src="./images/imho.jpg" alt="">
+                                </div>
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" name="cmt" class="form-control" placeholder="Viết bình luận...">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="cmt-block">
+                                <div class="main-left-content-wrapper__box">
+                                    <div class="main-left-content-wrapper__box-info">
+                                        <a href="#" class="__box-info__avatar-user">
+                                            <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
+                                            <div class="__box-info__text">Nguyễn Văn A</div>
+                                        </a>
+                                        <div class="__box-info__time">3 giờ trước
+                                        </div>
+                                        <div class="__box-info__coin">136.000.000</div>
+                                    </div>
+                                    <div class="main-left-content-wrapper__box-more">
+                                        <span class="seemore-ellipsic">
+                                            <img src="./images/Ellipsis.svg" alt="">
+                                        </span>
+                                        <ul class="seemore-list-index">
+                                            <li class="seemore-items-index"><a href="#">Xóa bài viết</a></li>
+                                            <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="main-left-content__des pt-10">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án.</p>
+                                <div class="main-left-content-common">
+                                    <div class="content-common-left">
+                                        <div class="content-common__cmt">1 Trả lời</div>
+
+                                        <div class="content-common__bonus">Trao thưởng</div>
+                                    </div>
+                                    <div class="content-common-right">
+                                        <div class="content-common__down"><img src="./images/arrow_down.svg" alt=""></div>
+                                        <div class="content-common__number">168</div>
+                                        <div class="content-common__up"><img src="./images/arrow_up.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <!-- rep cmt -->
+                                <div class="rep-cmt">
+                                    <div class="main-left-content-wrapper__box">
+                                        <div class="main-left-content-wrapper__box-info">
+                                            <a href="#" class="__box-info__avatar-user">
+                                                <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
+                                                <div class="__box-info__text">Nguyễn Văn A</div>
+                                            </a>
+                                            <div class="__box-info__time">3 giờ trước
+                                            </div>
+                                        </div>
+                                        <div class="main-left-content-wrapper__box-more">
+                                            <span class="seemore-ellipsic">
+                                                <img src="./images/Ellipsis.svg" alt="">
+                                            </span>
+                                            <ul class="seemore-list-index">
+                                                <li class="seemore-items-index"><a href="#">Xóa bài viết</a></li>
+                                                <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="main-left-content__des pt-10">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án.</p>
+                                </div>
+                                <!-- end rep cmt -->
+                            </div>
+                        </div>
+                        <!-- end show comment -->
                     </div>
                     <!-- end khoi 1 -->
-                    <!-- end khoi 1 -->
-                    <div class="main-left-content-wrapper" id="block1">
-                        <div class="load-box1">
-                            <div class="load-box1__left"></div>
-                            <div class="load-box1__right"></div>
-                        </div>
-                        <div class="load-box2"></div>
-                        <div class="load-box3"></div>
-                        <div class="load-box4">
-                            <div class="load-box4__left"></div>
-                            <div class="load-box4__right"></div>
-                        </div>
-                    </div>
-                    <!-- end khoi 1 -->
-
-
                 </div>
                 <!-- end content -->
             </div>
-            <div class="main-right">
-                <div class="main-right-wrapper">
-                    <div class="banner">
-                        <a href="#"><img src="./images/banner.jpg" alt=""></a>
-                    </div>
-                    <div class="main-right-info">
-                        <p class="main-right-info__text">MXH Largeer đang trong quá trình thử nghiệm</p>
-                        <p class="main-right-info__text">© 2021 Công ty TNHH Công nghệ Truyền thông Explus</p>
-                        <p class="main-right-info__text">Địa chỉ: tầng M, tòa nhà VG Building, ngõ 235 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
-                        <p class="main-right-info__text">MST: 0106113846</p>
-                    </div>
-                </div>
-            </div>
+            <div class="main-right">hello</div>
         </div>
     </main>
-    <footer id="footer" class="footer">
-        <div class="w-1080 footer-wrapper">
-            <div class="footer-block1">
-                <div class="footer-block1__left">
-                    <img src="./images/Logo_KinhTeVietNam 2.svg" alt="" class="block1__avatar">
-                    <div class="block1__content">
-                        <p class="block1__text">MXH <span>Largeer</span> đang trong quá trình thử nghiệm người dùng</p>
-                        <p class="block1__text"><span>CÔNG TY TNHH CÔNG NGHỆ TRUYỀN THÔNG EXPLUS</span></p>
-                        <p class="block1__text">Địa chỉ: tầng M, tòa nhà VG Building, ngõ 235 Nguyễn Trãi, Hà Nội</p>
-                    </div>
-                </div>
-                <div class="footer-block1__right">
-                    <p class="block1__text">Chịu trách nhiệm nội dung: <span>Nguyễn Văn A</span></p>
-                </div>
-            </div>
-            <div class="footer-block2">
-                <ul class="footer-block2-list">
-                    <li class="footer-block2__items"><a href="#">Về chúng tôi</a></li>
-                    <li class="footer-block2__items"><a href="#">Điều khoản</a></li>
-                    <li class="footer-block2__items"><a href="#">Pháp Lý</a></li>
-                    <li class="footer-block2__items"><a href="#">Quảng cáo</a></li>
-                    <li class="footer-block2__items"><a href="#">Trợ giúp</a></li>
-                    <li class="footer-block2__items"><a href="#">Liên hệ</a></li>
-                </ul>
-            </div>
-            <div class="footer-block3">© 2021 Explus. All Rights Reserved</div>
-        </div>
-    </footer>
     <script src="./js/main.js"></script>
 </body>
 

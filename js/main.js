@@ -26,19 +26,29 @@ notifiHeader.onclick = function() {
 };
 // end show notification
 
-// show popup tao bai viet
-var createPost = document.querySelector(".navbar-index_right__title");
-var getPopup = document.querySelector(".create-post-wrapper");
-var closePost = document.querySelector(".create-post__close");
-createPost.onclick = function() {
-    if (getPopup.classList.contains("open")) {
-        getPopup.classList.remove("open");
+// show popup tao cong dong
+var createGroup = document.querySelector(".create-group");
+var getPopupGroup = document.querySelector(".create-group-wrapper");
+var closePopupGroup = document.querySelector(".create-group__close");
+createGroup.onclick = function() {
+    if (getPopupGroup.classList.contains("open")) {
+        getPopupGroup.classList.remove("open");
     } else {
-        getPopup.classList.add("open");
+        getPopupGroup.classList.add("open");
     }
 };
-closePost.onclick = function() {
-    if (getPopup.classList.contains("open")) {
-        getPopup.classList.remove("open");
+closePopupGroup.onclick = function() {
+    if (getPopupGroup.classList.contains("open")) {
+        getPopupGroup.classList.remove("open");
     }
 };
+document.onkeydown = function(e) {
+    switch (e.which) {
+        case 27:
+            getPopupGroup.classList.remove("open");
+            showNotifi.classList.remove("open");
+            showSearchHeader.classList.remove("open");
+            break;
+    }
+};
+// end show popup tao cong dong
