@@ -46,9 +46,27 @@ document.onkeydown = function(e) {
     switch (e.which) {
         case 27:
             getPopupGroup.classList.remove("open");
+            getPopupLogin.classList.remove("open");
             showNotifi.classList.remove("open");
             showSearchHeader.classList.remove("open");
             break;
     }
 };
 // end show popup tao cong dong
+// show form login
+var showLoginForm = document.querySelector(".user-login");
+var getPopupLogin = document.querySelector(".login-wrapper");
+var closePopLogin = document.querySelector(".login-btn-close");
+showLoginForm.onclick = function() {
+    if (getPopupLogin.classList.contains("open")) {
+        getPopupLogin.classList.remove("open");
+    } else {
+        getPopupLogin.classList.add("open");
+    }
+};
+closePopLogin.onclick = function() {
+    if (getPopupLogin.classList.contains("open")) {
+        getPopupLogin.classList.remove("open");
+    }
+};
+// end show form login
