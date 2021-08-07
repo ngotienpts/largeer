@@ -29,6 +29,18 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .info-group {
+    width: 100%;
+  }
+
+  .avatar-group {
+    display: none;
+  }
+
+  .main-group {
+    padding-top: 10px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .main {
@@ -170,6 +182,14 @@
 
   .rep-cmt {
     padding: 0;
+  }
+
+  .navbar-group {
+    margin-top: 100px;
+  }
+
+  .register-group {
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 376px) {
