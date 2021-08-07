@@ -848,7 +848,7 @@ img {
 }
 
 .show-cmt {
-    display: none;
+    // display: none;
     transition: 2s linear;
     -webkit-transition: 2s linear;
     -moz-transition: 2s linear;
@@ -1278,4 +1278,8 @@ img.block1__avatar {
 
 .f-bold {
     font-weight: 600;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
 }

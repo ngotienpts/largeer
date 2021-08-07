@@ -167,6 +167,10 @@
   .main-left-content__img {
     grid-gap: 5px;
   }
+
+  .rep-cmt {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 376px) {
   .navbar-index {

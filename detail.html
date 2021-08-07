@@ -26,6 +26,7 @@
     <!-- chia sẻ qua twitter -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -55,7 +56,9 @@
                     <div class="show-notifi">
                         <div class="show-notifi-header">
                             <h2 class="show-notifi-title">Thông báo</h2>
-                            <span class="show-notifi-more">...</span>
+                            <span class="show-notifi-more">
+                                <img src="./images/close.svg" alt="">
+                            </span>
                         </div>
                         <ul class="show-notifi-list">
                             <li class="show-notifi__items">
@@ -161,7 +164,21 @@
                         </span>
                         <h1 class="header-info__fullname">Nguyễn Văn A</h1>
                     </a>
+                    <!-- show info -->
+                    <ul class="show-info">
+                        <li class="show-info__items"><a href="#">Thông tin cá nhân</a></li>
+                        <li class="show-info__items create-group">Tạo cộng đồng</li>
+                        <li class="show-info__items"><a href="#">Ví của tôi</a></li>
+                        <li class="show-info__items"><a href="#">Cửa hàng quà tặng</a></li>
+                        <li class="show-info__items">Đăng xuất</li>
+                    </ul>
+                    <!-- end show info -->
                 </div>
+                <!-- register/login  -->
+                <div class="user-login">
+                    Đăng ký / Đăng nhập
+                </div>
+                <!-- end register/login  -->
             </div>
         </div>
     </header>
@@ -183,72 +200,71 @@
         </div>
     </div>
     <!-- end show search -->
-    <!-- tao bai dang -->
-    <div class="create-post-wrapper">
-        <div class="create-post">
+    <!-- tao cong dong -->
+    <div class="create-group-wrapper">
+        <div class="create-group-form">
+            <div class="create-group-content">
+                <form action="">
+                    <div class="form-group1">
+                        <label for="create-group-input" class="create-group-label">Tạo cộng đồng</label>
+                        <input type="text" id="create-group-input" name="" class="create-group-input">
+                    </div>
+                    <div class="form-group1">
+                        <label for="create-group-textarea" class="create-group-label">Mô tả</label>
+                        <textarea name="" id="create-group-textarea" cols="50" rows="7" class="create-group-textarea"></textarea>
+                    </div>
+                    <div class="create-group-content__button">
+                        <span class="button-create create-group__close button-cancel btn">Hủy</span>
+                        <button type="submit" class="button-create btn btn-blue">Tạo cộng đồng</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end cong dong -->
+    <!-- form dang nhap -->
+    <div class="login-wrapper">
+        <div class="login-form">
             <form action="">
-                <div class="create-post__header">
-                    <h3 class="create-post__title">Tạo bài viết</h3>
-                    <span class="create-post__close">
-                        <img src="./images/close.svg" alt="">
-                    </span>
+                <div class="login-header">Tài khoản Largeer</div>
+                <div class="lgoin-text pb-20">Nếu bạn chưa có tài khoản hãy <a href="#" class="login-link f-bold"> Đăng ký</a> tại đây!</div>
+                <div class="login-header pt-15">Đăng nhập</div>
+                <div class="form-group1">
+                    <label for="input-number" class="lgoin-text">Nhập số điện thoại của bạn</label>
+                    <input type="text" maxlength="10" id="input-number" name="" class="input-number input-number--m25" placeholder="Số điện thoại">
+                    <span class="token-notifi">* Bạn hãy nhập đúng số điện thoại *</span>
                 </div>
-                <div class="create-post-info">
+                <div class="form-group1 pb-20 pt-15">
+                    <input type="checkbox" id="agree-rules" checked>
+                    <label for="agree-rules" class="agree-rules-label">Tôi đồng ý <a href="#" class="login-link ">điều khoản và điều kiện</a></label>
 
                 </div>
-                <div class="create-post__content">
-                    text
+                <div class="">
+                    <button type="submit" class="login-btn btn btn-blue">Tiếp tục</button>
+                    <span class="login-btn login-btn-close button-cancel btn">Hủy</span>
                 </div>
-                <div class="create-post-add">
-                    <div class="create-post-add__text">Thêm vào bài viết</div>
-                    <div class="create-post-add__cate"></div>
-                </div>
-                <buton class="create-button btn btn-blue">Đăng</buton>
             </form>
         </div>
     </div>
-    <!-- end tao bai dang -->
+    <!-- end form dang nhap -->
     <main id="main">
         <div class="main w-1080">
             <div class="main-left">
-                <!-- navbar -->
-                <div class="navbar-index">
-                    <div class="navbar-index_left">
-                        <ul class="navbar-nav-index">
-                            <li class="navbar-items active">
-                                <a href="#" class="navbar-link active">Dành cho bạn</a>
-                            </li>
-                            <li class="navbar-items">
-                                <a href="#" class="navbar-link">Nóng</a>
-                            </li>
-                            <li class="navbar-items">
-                                <a href="#" class="navbar-link">Mới nhất</a>
-                            </li>
-                            <li class="navbar-items">
-                                <a href="#" class="navbar-link">Câu hỏi khó</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navbar-index_right">
-                        <h2 class="navbar-index_right__title">+ Tạo bài đăng</h2>
-                    </div>
-                </div>
-                <!-- end navbar -->
-                <!-- popup tao bai viet -->
-                <!-- end popup tao bai viet -->
                 <!-- content -->
                 <div class="main-left-content">
                     <!-- khoi 1 -->
-                    <div class="main-left-content-wrapper" id="block1">
+                    <div class="main-left-content-wrapper pt-0" id="block1">
                         <div class="main-left-content-wrapper__box">
                             <div class="main-left-content-wrapper__box-info">
                                 <a href="#" class="__box-info__avatar-user">
                                     <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
                                     <div class="__box-info__text">Nguyễn Văn A</div>
                                 </a>
-                                <div class="__box-info__time">3 giờ trước nhóm <span><a href="#" class="__box-info__time__link">OTOFUN</a></span>
+                                <div class="container-time-coin">
+                                    <div class="__box-info__time">3 giờ trước nhóm <span><a href="#" class="__box-info__time__link">OTOFUN</a></span>
+                                    </div>
+                                    <div class="__box-info__coin">136.000.000</div>
                                 </div>
-                                <div class="__box-info__coin">136.000.000</div>
                             </div>
                             <div class="main-left-content-wrapper__box-more">
                                 <span class="seemore-ellipsic">
@@ -266,7 +282,7 @@
                         <p class="main-left-content__des">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án. <a href="#" class="main-left-content__link">Xem thêm</a></p>
                         <div class="main-left-content-common">
                             <div class="content-common-left">
-                                <div class="content-common__cmt">368 bình luận</div>
+                                <div class="content-common__cmt"><a href="#">368 bình luận</a></div>
                                 <div class="content-common__share">Chia sẻ</div>
                                 <div class="content-common__bonus">Trao thưởng</div>
                             </div>
@@ -295,16 +311,18 @@
                                             <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
                                             <div class="__box-info__text">Nguyễn Văn A</div>
                                         </a>
-                                        <div class="__box-info__time">3 giờ trước
+                                        <div class="container-time-coin">
+                                            <div class="__box-info__time">3 giờ trước
+                                            </div>
+                                            <div class="__box-info__coin">136.000.000</div>
                                         </div>
-                                        <div class="__box-info__coin">136.000.000</div>
                                     </div>
                                     <div class="main-left-content-wrapper__box-more">
                                         <span class="seemore-ellipsic">
                                             <img src="./images/Ellipsis.svg" alt="">
                                         </span>
                                         <ul class="seemore-list-index">
-                                            <li class="seemore-items-index"><a href="#">Xóa bài viết</a></li>
+                                            <li class="seemore-items-index"><a href="#">Lưu bài viết</a></li>
                                             <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
                                         </ul>
                                     </div>
@@ -330,17 +348,6 @@
                                                 <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
                                                 <div class="__box-info__text">Nguyễn Văn A</div>
                                             </a>
-                                            <div class="__box-info__time">3 giờ trước
-                                            </div>
-                                        </div>
-                                        <div class="main-left-content-wrapper__box-more">
-                                            <span class="seemore-ellipsic">
-                                                <img src="./images/Ellipsis.svg" alt="">
-                                            </span>
-                                            <ul class="seemore-list-index">
-                                                <li class="seemore-items-index"><a href="#">Xóa bài viết</a></li>
-                                                <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                     <p class="main-left-content__des pt-10">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án.</p>
@@ -351,125 +358,53 @@
                         <!-- end show comment -->
                     </div>
                     <!-- end khoi 1 -->
-                    <!-- khoi 1 -->
-                    <div class="main-left-content-wrapper" id="block1">
-                        <div class="main-left-content-wrapper__box">
-                            <div class="main-left-content-wrapper__box-info">
-                                <a href="#" class="__box-info__avatar-user">
-                                    <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
-                                    <div class="__box-info__text">Nguyễn Văn A</div>
-                                </a>
-                                <div class="__box-info__time">3 giờ trước nhóm <span><a href="#" class="__box-info__time__link">OTOFUN</a></span>
-                                </div>
-                                <div class="__box-info__coin">136.000.000</div>
-                            </div>
-                            <div class="main-left-content-wrapper__box-more">
-                                <span class="seemore-ellipsic">
-                                    <img src="./images/Ellipsis.svg" alt="">
-                                </span>
-                                <ul class="seemore-list-index">
-                                    <li class="seemore-items-index"><a href="#">Lưu bài viết</a></li>
-                                    <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <h3 class="main-left-content__title">
-                            <a href="#">Tuyến đường sắt qua Hồ Gươm vay ODA 30.572 tỷ đồng?</a>
-                        </h3>
-                        <p class="main-left-content__des">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án. <a href="#" class="main-left-content__link">Xem thêm</a></p>
-                        <div class="main-left-content-common">
-                            <div class="content-common-left">
-                                <div class="content-common__cmt">368 bình luận</div>
-                                <div class="content-common__share">Chia sẻ</div>
-                                <div class="content-common__bonus">Trao thưởng</div>
-                            </div>
-                            <div class="content-common-right">
-                                <div class="content-common__down"><img src="./images/arrow_down.svg" alt=""></div>
-                                <div class="content-common__number">168</div>
-                                <div class="content-common__up"><img src="./images/arrow_up.svg" alt=""></div>
-                            </div>
-                        </div>
-                        <!-- show comment -->
-                        <div class="show-cmt">
-                            <div class="cmt-field">
-                                <div class="cmt-avatar">
-                                    <img src="./images/imho.jpg" alt="">
-                                </div>
-                                <form action="">
-                                    <div class="form-group">
-                                        <input type="text" name="cmt" class="form-control" placeholder="Viết bình luận...">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="cmt-block">
-                                <div class="main-left-content-wrapper__box">
-                                    <div class="main-left-content-wrapper__box-info">
-                                        <a href="#" class="__box-info__avatar-user">
-                                            <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
-                                            <div class="__box-info__text">Nguyễn Văn A</div>
-                                        </a>
-                                        <div class="__box-info__time">3 giờ trước
-                                        </div>
-                                        <div class="__box-info__coin">136.000.000</div>
-                                    </div>
-                                    <div class="main-left-content-wrapper__box-more">
-                                        <span class="seemore-ellipsic">
-                                            <img src="./images/Ellipsis.svg" alt="">
-                                        </span>
-                                        <ul class="seemore-list-index">
-                                            <li class="seemore-items-index"><a href="#">Xóa bài viết</a></li>
-                                            <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <p class="main-left-content__des pt-10">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án.</p>
-                                <div class="main-left-content-common">
-                                    <div class="content-common-left">
-                                        <div class="content-common__cmt">1 Trả lời</div>
 
-                                        <div class="content-common__bonus">Trao thưởng</div>
-                                    </div>
-                                    <div class="content-common-right">
-                                        <div class="content-common__down"><img src="./images/arrow_down.svg" alt=""></div>
-                                        <div class="content-common__number">168</div>
-                                        <div class="content-common__up"><img src="./images/arrow_up.svg" alt=""></div>
-                                    </div>
-                                </div>
-                                <!-- rep cmt -->
-                                <div class="rep-cmt">
-                                    <div class="main-left-content-wrapper__box">
-                                        <div class="main-left-content-wrapper__box-info">
-                                            <a href="#" class="__box-info__avatar-user">
-                                                <div class="__box-info__avatar"><img src="./images/imho.jpg" alt=""></div>
-                                                <div class="__box-info__text">Nguyễn Văn A</div>
-                                            </a>
-                                            <div class="__box-info__time">3 giờ trước
-                                            </div>
-                                        </div>
-                                        <div class="main-left-content-wrapper__box-more">
-                                            <span class="seemore-ellipsic">
-                                                <img src="./images/Ellipsis.svg" alt="">
-                                            </span>
-                                            <ul class="seemore-list-index">
-                                                <li class="seemore-items-index"><a href="#">Xóa bài viết</a></li>
-                                                <li class="seemore-items-index"><a href="#">Báo cáo</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <p class="main-left-content__des pt-10">Mức vay ODA của Hà Nội để làm đường sắt đô thị đoạn Nam Thăng Long - Trần Hưng Đạo chiếm 85,6% tổng vốn đầu tư dự án.</p>
-                                </div>
-                                <!-- end rep cmt -->
-                            </div>
-                        </div>
-                        <!-- end show comment -->
-                    </div>
-                    <!-- end khoi 1 -->
                 </div>
                 <!-- end content -->
             </div>
-            <div class="main-right">hello</div>
+            <div class="main-right">
+                <div class="main-right-wrapper">
+                    <div class="banner">
+                        <a href="#"><img src="./images/banner.jpg" alt=""></a>
+                    </div>
+                    <div class="main-right-info">
+                        <p class="main-right-info__text">MXH Largeer đang trong quá trình thử nghiệm</p>
+                        <p class="main-right-info__text">© 2021 Công ty TNHH Công nghệ Truyền thông Explus</p>
+                        <p class="main-right-info__text">Địa chỉ: tầng M, tòa nhà VG Building, ngõ 235 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                        <p class="main-right-info__text">MST: 0106113846</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <footer id="footer" class="footer">
+        <div class="w-1080 footer-wrapper">
+            <div class="footer-block1">
+                <div class="footer-block1__left">
+                    <img src="./images/Logo_KinhTeVietNam 2.svg" alt="" class="block1__avatar">
+                    <div class="block1__content">
+                        <p class="block1__text">MXH <span>Largeer</span> đang trong quá trình thử nghiệm người dùng</p>
+                        <p class="block1__text"><span>CÔNG TY TNHH CÔNG NGHỆ TRUYỀN THÔNG EXPLUS</span></p>
+                        <p class="block1__text">Địa chỉ: tầng M, tòa nhà VG Building, ngõ 235 Nguyễn Trãi, Hà Nội</p>
+                    </div>
+                </div>
+                <div class="footer-block1__right">
+                    <p class="block1__text">Chịu trách nhiệm nội dung: <span>Nguyễn Văn A</span></p>
+                </div>
+            </div>
+            <div class="footer-block2">
+                <ul class="footer-block2-list">
+                    <li class="footer-block2__items"><a href="#">Về chúng tôi</a></li>
+                    <li class="footer-block2__items"><a href="#">Điều khoản</a></li>
+                    <li class="footer-block2__items"><a href="#">Pháp Lý</a></li>
+                    <li class="footer-block2__items"><a href="#">Quảng cáo</a></li>
+                    <li class="footer-block2__items"><a href="#">Trợ giúp</a></li>
+                    <li class="footer-block2__items"><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-block3">© 2021 Explus. All Rights Reserved</div>
+        </div>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 
