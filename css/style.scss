@@ -17,6 +17,7 @@ button {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
+    user-select: none;
 }
 
 a {
@@ -34,7 +35,7 @@ img {
     max-width: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import "./variables";
 @import "./mixins";
 .w-1080 {
@@ -66,6 +67,20 @@ img {
     -moz-transition: 0.2s ease;
     -ms-transition: 0.2s ease;
     -o-transition: 0.2s ease;
+}
+
+.btn-bluec6 {
+    background-color: $bgc-blue6c;
+    cursor: pointer;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+}
+
+.btn-bluec6:hover {
+    background-color: #5b75a2;
 }
 
 .btn-red {
@@ -483,7 +498,7 @@ img {
     font-weight: 600;
 }
 
-.navbar-index_right__title {
+.navbar-index_right__title a {
     font-size: $fs-14;
     color: $text-red-A7;
     padding: 10px;
@@ -649,7 +664,8 @@ img {
     position: relative;
 }
 
-.create-group-wrapper {
+.create-group-wrapper,
+.my-wallet-wrapper {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -667,11 +683,13 @@ img {
     -o-transition: 0.2s ease;
 }
 
-.create-group-wrapper.open {
+.create-group-wrapper.open,
+.my-wallet-wrapper.open {
     display: block;
 }
 
-.create-group-form {
+.create-group-form,
+.my-wallet {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -707,7 +725,8 @@ img {
 }
 
 .create-group-input:focus,
-.create-group-textarea:focus {
+.create-group-textarea:focus,
+.amount-of-money:focus {
     border-color: rgb(43, 226, 211);
 }
 
@@ -1135,6 +1154,7 @@ img.block1__avatar {
 .user-login {
     font-size: 14px;
     cursor: pointer;
+    user-select: none;
 }
 
 .user-login:hover {
@@ -1244,6 +1264,112 @@ img.block1__avatar {
 
 .login-btn-close {
     margin-right: 0;
+    user-select: none
+}
+
+.my-wallet {
+    width: auto;
+    padding: 0
+}
+
+.my-wallet-header {
+    position: relative;
+}
+
+.my-wallet-header img {
+    max-height: 328px;
+    width: auto;
+    object-fit: cover;
+}
+
+.wallet-header__name {
+    padding: 35px 28px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 11.5px;
+    font-weight: 300;
+}
+
+.wallet-header__surplus {
+    position: absolute;
+    top: 116px;
+    padding-left: 28px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.wallet-header__title {
+    position: absolute;
+    padding-left: 28px;
+    color: #fff;
+    bottom: 35px;
+    font-size: 24px;
+}
+
+.my-wallet-content {
+    background: #fff;
+    padding: 30px 28px;
+    text-align: center;
+}
+
+.form-group2+.form-group2 {
+    margin-left: 15px;
+}
+
+.form-group2 label img {
+    height: 68px;
+    width: auto;
+    object-fit: cover;
+}
+
+.payment-chanel,
+.recharge {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.payment {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.price-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.price-items {
+    padding: 6px 14px;
+    font-weight: 300;
+    font-family: arial;
+}
+
+.price-items+.price-items {
+    margin-left: 15px;
+}
+
+.amount-of-money {
+    width: 200px;
+    height: 43px;
+    padding: 0 15px;
+    border: 1px solid #DEDEDE;
+    margin-bottom: 30px;
+}
+
+.close-recharge {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.my-wallet__text {
+    font-size: 14px;
+    font-family: arial;
 }
 
 .navbar-cmt {
@@ -1344,8 +1470,158 @@ img.block1__avatar {
     margin-top: 130px;
 }
 
+.create-post-header {
+    font-size: 24px;
+    font-family: arial;
+}
+
+.button-create-post {
+    background-color: #DBDBDB;
+    color: #000;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+}
+
+.button-create-post:hover {
+    background-color: #c8c8c8;
+}
+
+//
+.btn_upload {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    background-color: $bgc-f0f4;
+    padding: 20px 40px;
+}
+
+.btn_upload:hover,
+.btn_upload:focus {
+    background-color: #e8e8ea;
+}
+
+.add-file-img {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+}
+
+.yes {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0 30px;
+}
+
+.btn_upload input {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    filter: alpha(opacity=1);
+    -moz-opacity: 0;
+    opacity: 0;
+}
+
+.it {
+    height: 90px;
+    margin-left: 10px;
+}
+
+.block-preview1 {
+    position: relative;
+}
+
+.btn-rmv1 {
+    display: none;
+}
+
+.rmv {
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    display: inline-block;
+    background: #c70d0d;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 20px;
+    height: 20px;
+}
+
+.rmv:hover {
+    background: #a80303;
+}
+
+//
+#block-preview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.article {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.article:first-child {
+    margin-left: 10px;
+}
+
+.article+.article {
+    margin-left: 10px;
+}
+
+.gift-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+}
+
+.gift-items {
+    background-color: $bgc-f0f4;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+}
+
+.gift-items-img {
+    flex-shrink: 0;
+}
+
+.gift-items-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gift-items__title {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.gift-items__cart {
+    font-size: 18px;
+    padding: 0 10px 10px;
+    font-weight: 600;
+    color: $text-red-A7;
+}
+
 .line1 {
     border-bottom: 1px solid #d6d6d677;
+}
+
+.fw-bold {
+    font-weight: 600;
 }
 
 .pt-10 {

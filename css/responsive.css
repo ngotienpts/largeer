@@ -191,6 +191,29 @@
   .register-group {
     font-size: 15px;
   }
+
+  .yes {
+    display: block;
+  }
+
+  .article {
+    margin-top: 10px;
+  }
+
+  .article:first-child {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .article + .article {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  .gift-list {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
 }
 @media only screen and (max-width: 376px) {
   .navbar-index {
