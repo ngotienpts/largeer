@@ -214,6 +214,44 @@
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
+
+  .wallet-header__name {
+    font-size: 24px;
+    padding: 20px 15px;
+  }
+
+  .wallet-header__surplus {
+    top: 65px;
+    padding-left: 15px;
+  }
+
+  .wallet-header__title {
+    padding-left: 15px;
+    bottom: 20px;
+    font-size: 20px;
+  }
+
+  .close-recharge {
+    font-size: 16px;
+  }
+
+  .amount-of-money {
+    height: 34px;
+    width: 200px;
+  }
+
+  .price-items {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+
+  .my-wallet-content {
+    padding: 30px 15px;
+  }
+
+  .main-left-content__img-text {
+    font-size: 32px;
+  }
 }
 @media only screen and (max-width: 376px) {
   .navbar-index {
@@ -222,6 +260,10 @@
 
   .navbar-index_right {
     padding-top: 15px;
+  }
+
+  .amount-of-money {
+    width: 160px;
   }
 }
 

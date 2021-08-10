@@ -169,8 +169,8 @@
                     <ul class="show-info">
                         <li class="show-info__items"><a href="#">Thông tin cá nhân</a></li>
                         <li class="show-info__items create-group">Tạo cộng đồng</li>
-                        <li class="show-info__items"><a href="#">Ví của tôi</a></li>
-                        <li class="show-info__items"><a href="#">Cửa hàng quà tặng</a></li>
+                        <li class="show-info__items wallet">Ví của tôi</li>
+                        <li class="show-info__items"><a href="./gift-exchange.html">Cửa hàng quà tặng</a></li>
                         <li class="show-info__items">Đăng xuất</li>
                     </ul>
                     <!-- end show info -->
@@ -248,6 +248,45 @@
         </div>
     </div>
     <!-- end form dang nhap -->
+    <!-- my wallet -->
+    <div class="my-wallet-wrapper">
+        <div class="my-wallet">
+            <div class="my-wallet-header">
+                <img src="./images/gold.svg" alt="">
+                <div class="wallet-header__name">Nguyễn Văn A</div>
+                <div class="wallet-header__surplus">Số dư:&nbsp;<span class="fw-bold">5.000</span></div>
+                <div class="wallet-header__title">Largeer coin</div>
+            </div>
+            <div class="my-wallet-content">
+                <form action="">
+                    <div class="payment-chanel">
+                        <div class="form-group2">
+                            <label for="momo"><img src="./images/momo.svg" alt=""></label>
+                            <input type="radio" id="momo" name="chanel" value="momo" class="payment" checked>
+                        </div>
+                        <div class="form-group2">
+                            <label for="vnpay"><img src="./images/vnpay.svg" alt=""></label>
+                            <input type="radio" id="vnpay" name="chanel" value="vnpay" class="payment">
+                        </div>
+                    </div>
+                    <ul class="price-list">
+                        <li class="price-items  btn btn-bluec6">10.000</li>
+                        <li class="price-items  btn btn-bluec6">50.000</li>
+                        <li class="price-items  btn btn-bluec6">100.000</li>
+                        <li class="price-items  btn btn-bluec6">200.000</li>
+                        <li class="price-items  btn btn-bluec6">500.000</li>
+                    </ul>
+                    <div class="recharge">
+                        <input type="text" class="amount-of-money" placeholder="Số tiền">
+                        <button type="submit" class="button-create btn btn-blue">Nạp</button>
+                        <div class="btn button-cancel close-recharge">Hủy</div>
+                    </div>
+                    <p class="my-wallet__text">Bằng cách Nạp tiền, bạn đồng ý với Thỏa thuận người dùng Largeer.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end my wallet -->
     <main id="main">
         <div class="main w-1080">
             <div class="main-left">
