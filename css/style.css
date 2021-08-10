@@ -36,6 +36,10 @@ img {
   max-width: 100%;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .w-1080 {
   margin: auto;
   max-width: 67.5rem;
@@ -390,6 +394,10 @@ img {
   padding-left: 0.625rem;
 }
 
+.header-info__fullname:hover {
+  text-decoration: underline;
+}
+
 .show-search-content {
   display: flex;
   align-items: center;
@@ -494,6 +502,10 @@ img {
   font-weight: 600;
 }
 
+.navbar-items.active .navbar-link:hover {
+  text-decoration: none;
+}
+
 .navbar-index_right__title a {
   font-size: 0.875rem;
   color: #A71F23;
@@ -582,10 +594,6 @@ img {
   position: absolute;
   left: 0;
   top: 8px;
-}
-
-.__box-info__time a {
-  text-decoration: underline;
 }
 
 .__box-info__coin:before {
@@ -817,10 +825,6 @@ img {
   color: #666;
 }
 
-.content-common__share {
-  text-decoration: underline;
-}
-
 .content-common__cmt:before,
 .content-common__bonus:before,
 .content-common__share:before {
@@ -849,13 +853,7 @@ img {
 .content-common__cmt:hover,
 .content-common__share:hover,
 .content-common__bonus:hover {
-  color: #777;
-  font-weight: 600;
-  transition: 0.1s ease;
-  -webkit-transition: 0.1s ease;
-  -moz-transition: 0.1s ease;
-  -ms-transition: 0.1s ease;
-  -o-transition: 0.1s ease;
+  text-decoration: underline;
 }
 
 .content-common__up,
@@ -1024,7 +1022,6 @@ img {
 }
 
 .main-left-content__link2 {
-  text-decoration: underline;
   color: #000;
 }
 
@@ -1179,7 +1176,7 @@ img.block1__avatar {
 }
 
 .user-login:hover {
-  font-weight: 600;
+  text-decoration: underline;
 }
 
 .login-wrapper {
