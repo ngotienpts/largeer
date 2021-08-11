@@ -36,10 +36,6 @@ img {
   max-width: 100%;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .w-1080 {
   margin: auto;
   max-width: 67.5rem;
@@ -485,6 +481,10 @@ a:hover {
   font-size: 0.75rem;
 }
 
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
 .navbar-items {
   margin-right: 0.9375rem;
   padding-bottom: 0.9375rem;
@@ -579,6 +579,10 @@ a:hover {
 .__box-info__time a {
   font-size: 0.75rem;
   color: #777;
+}
+
+.__box-info__time__link:hover {
+  text-decoration: underline;
 }
 
 .__box-info__time::before {
@@ -775,6 +779,10 @@ a:hover {
   padding: 0.9375rem 0;
 }
 
+.main-left-content__title a:hover {
+  text-decoration: underline;
+}
+
 .main-left-content__des {
   color: #444;
   font-size: 0.875rem;
@@ -850,7 +858,7 @@ a:hover {
   background-image: url(../images/reward.svg);
 }
 
-.content-common__cmt:hover,
+.content-common__cmt a:hover,
 .content-common__share:hover,
 .content-common__bonus:hover {
   text-decoration: underline;

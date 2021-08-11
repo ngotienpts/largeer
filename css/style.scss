@@ -38,10 +38,9 @@ img {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import "./variables";
 @import "./mixins";
-a:hover {
-    text-decoration: underline;
-}
-
+// a:hover {
+//     text-decoration: underline;
+// }
 .w-1080 {
     margin: auto;
     max-width: 67.5rem;
@@ -489,6 +488,10 @@ a:hover {
     font-size: $fs-12;
 }
 
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
 .navbar-items {
     margin-right: 0.9375rem;
     padding-bottom: 0.9375rem;
@@ -579,6 +582,10 @@ a:hover {
 .__box-info__time a {
     font-size: $fs-12;
     color: $text-77;
+}
+
+.__box-info__time__link:hover {
+    text-decoration: underline;
 }
 
 .__box-info__time::before {
@@ -776,6 +783,10 @@ a:hover {
     padding: 0.9375rem 0;
 }
 
+.main-left-content__title a:hover {
+    text-decoration: underline;
+}
+
 .main-left-content__des {
     color: $text-44;
     font-size: $fs-14;
@@ -849,7 +860,7 @@ a:hover {
     background-image: url(../images/reward.svg);
 }
 
-.content-common__cmt:hover,
+.content-common__cmt a:hover,
 .content-common__share:hover,
 .content-common__bonus:hover {
     text-decoration: underline;
