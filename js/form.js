@@ -34,6 +34,7 @@ function formRegister() {
     };
 
     phoneNumberElement.oninput = function(e) {
+        e.target.value = e.target.value.replace(/[^0-9]/g, "");
         let formMessage = document.querySelector(".form-message");
         if (e.value != "") {
             phoneNumberElement.parentElement.parentElement.classList.remove(
@@ -130,6 +131,7 @@ function formLogin() {
     };
 
     phoneNumberElementLogin.oninput = function(e) {
+        e.target.value = e.target.value.replace(/[^0-9]/g, "");
         let formMessage = blockFormLogin.querySelector(".form-message");
         if (e.value != "") {
             phoneNumberElementLogin.parentElement.parentElement.classList.remove(
