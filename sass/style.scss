@@ -1645,6 +1645,170 @@ img.block1__avatar {
     color: $text-red-A7;
 }
 
+// form login / register / otp
+.main-form-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 420px;
+}
+
+.heading-form {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1E2329;
+    margin-bottom: 16px;
+}
+
+.form-group-t {
+    margin-bottom: 24px;
+}
+
+.des-form {
+    min-width: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #474D57;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    color: #1E2329;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.form-message {
+    margin: 4px 0px 0px;
+    min-width: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    display: block;
+}
+
+.registered,
+.otp-registered {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #707A8A;
+}
+
+.registered a,
+.otp-registered a {
+    font-weight: 600;
+}
+
+.form-btn {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.form-login-btn,
+.form-register-btn {
+    padding: 15px 30px;
+}
+
+.form-control-t {
+    border-radius: 6px;
+    border: 1px solid #EAECEF;
+    height: 46px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.form-control-t:hover,
+.form-control-t:focus {
+    border-color: #1877f2;
+}
+
+.block-phone-number {
+    display: flex;
+}
+
+.form-control-prevfix {
+    flex-shrink: 0;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.form-input-number {
+    flex: 1;
+}
+
+.block-password {
+    position: relative;
+}
+
+.show-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    display: block;
+    transform: translateY(-50%);
+    color: #828282;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.show-password:hover {
+    color: #000;
+}
+
+.form-group-t.invalid .form-message {
+    color: rgb(207, 48, 74);
+}
+
+.form-group-t.invalid .form-control-t {
+    border: 1px solid rgb(207, 48, 74);
+}
+
+.show-id-intro {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.form-control-t.hide {
+    display: none;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    will-change: display;
+}
+
+.form-control-t.hide.show {
+    display: block;
+}
+
+.otSc {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.otSc+.otSc {
+    margin-left: 15px;
+}
+
+.opt-sms-heading {
+    font-size: 18px;
+    margin: 15px 0 20px;
+}
+
+// end form login / register / otp
 .line1 {
     border-bottom: 1px solid #d6d6d677;
 }

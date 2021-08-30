@@ -266,35 +266,23 @@
         <div class="w-1080 main-group main-form-group">
             <div>
                 <form action="" id="form-register" method="" class="form" autocomplete="off">
-                    <h1 class="heading-form">Tạo tài khoản Largeer</h1>
-                    <p class="des-form">Đăng ký bằng số điện thoại di dộng của bạn</p>
+                    <h1 class="heading-form">Xác minh điện thoại</h1>
+                    <p class="des-form">Hãy nhập mã xác minh 6 số đã được gửi đến 0123456780.Mã này chỉ có giá trị trong vòng 30 phút</p>
                     <div class="form-group-t">
-                        <label for="phone-number" class="form-label">Di động</label>
-                        <div class="block-phone-number">
-                            <input type="button" value="+84" class="form-control-t form-control-prevfix">
-                            <input type="tel" id="phone-number" class="form-control-t form-input-number" name="phone" maxlength="10">
+                        <div class="opt-sms-heading">Mã xác thực SMS</div>
+                        <div class="block-phone-number block-otp">
+                            <input type="text" class="otSc form-control-t" minlength="1" maxlength="1">
+                            <input type="text" class="otSc form-control-t" minlength="1" maxlength="1">
+                            <input type="text" class="otSc form-control-t" minlength="1" maxlength="1">
+                            <input type="text" class="otSc form-control-t" minlength="1" maxlength="1">
+                            <input type="text" class="otSc form-control-t" minlength="1" maxlength="1">
+                            <input type="text" class="otSc form-control-t" minlength="1" maxlength="1">
                         </div>
                         <span class="form-message"></span>
                     </div>
-                    <div class="form-group-t">
-                        <label for="password" class="form-label">Mật khẩu</label>
-                        <div class="block-password">
-                            <input type="password" id="password" class="form-control-t" name="password" autocomplete="new-password">
-                            <ion-icon name="eye-off-outline" class="show-password"></ion-icon>
-                        </div>
-                        <span class="form-message"></span>
-                    </div>
-                    <div class="form-group-t">
-                        <label for="id-intro" class="form-label">Id giới thiệu(không bắt buộc)<ion-icon name="caret-down-outline" class="show-id-intro"></ion-icon></label>
-                        <input type="text" id="id-intro" class="form-control-t hide" name="id-intro">
-                    </div>
-                    <div class="form-group-t">
-                        <input type="checkbox" id="agree-rules" checked="">
-                        <label for="agree-rules" class="agree-rules-label">Tôi đã đọc và đồng ý với <a href="#" class="login-link ">Điều khoản Dịch vụ</a> của Largeer</label>
-                    </div>
-                    <button type="submit" class="form-register-btn btn btn-blue form-btn">Tạo tài khoản</button>
                 </form>
-                <div class="registered">Đã đăng ký rồi? <a href="#" class="login-link ">Đăng nhập</a></div>
+                <div class="otp-registered">Gửi lại sau 54 giây</div>
+                <div class="otp-registered"><a href="#" class="login-link ">Bạn chưa nhận được mã?</a></div>
             </div>
         </div>
     </main>
@@ -331,7 +319,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/form.js"></script>
     <script>
-        formRegister();
+        otpForm();
     </script>
 </body>
 

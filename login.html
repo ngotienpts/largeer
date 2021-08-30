@@ -265,9 +265,9 @@
     <main id="main">
         <div class="w-1080 main-group main-form-group">
             <div>
-                <form action="" id="form-register" method="" class="form" autocomplete="off">
-                    <h1 class="heading-form">Tạo tài khoản Largeer</h1>
-                    <p class="des-form">Đăng ký bằng số điện thoại di dộng của bạn</p>
+                <form action="" id="form-login" method="" class="form" autocomplete="off">
+                    <h1 class="heading-form">Đăng nhập tài khoản Largeer</h1>
+                    <p class="des-form">Chào mừng bạn trở lại Đăng nhập bằng số điện thoại di dộng của bạn</p>
                     <div class="form-group-t">
                         <label for="phone-number" class="form-label">Di động</label>
                         <div class="block-phone-number">
@@ -284,17 +284,10 @@
                         </div>
                         <span class="form-message"></span>
                     </div>
-                    <div class="form-group-t">
-                        <label for="id-intro" class="form-label">Id giới thiệu(không bắt buộc)<ion-icon name="caret-down-outline" class="show-id-intro"></ion-icon></label>
-                        <input type="text" id="id-intro" class="form-control-t hide" name="id-intro">
-                    </div>
-                    <div class="form-group-t">
-                        <input type="checkbox" id="agree-rules" checked="">
-                        <label for="agree-rules" class="agree-rules-label">Tôi đã đọc và đồng ý với <a href="#" class="login-link ">Điều khoản Dịch vụ</a> của Largeer</label>
-                    </div>
-                    <button type="submit" class="form-register-btn btn btn-blue form-btn">Tạo tài khoản</button>
+                    <button type="submit" class="form-login-btn btn btn-blue form-btn">Đăng nhập</button>
                 </form>
-                <div class="registered">Đã đăng ký rồi? <a href="#" class="login-link ">Đăng nhập</a></div>
+                <div class="registered"><a href="#" class="login-link">Quên mật khẩu?</a></div>
+                <div class="registered"><a href="#" class="login-link">Đăng ký</a></div>
             </div>
         </div>
     </main>
@@ -331,7 +324,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/form.js"></script>
     <script>
-        formRegister();
+        formLogin();
     </script>
 </body>
 
